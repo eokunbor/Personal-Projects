@@ -1,103 +1,103 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+@media screen and (max-width: 1400px) { /* Applies styles when the screen width is 1400px or less */
+  #profile { /* Styles for the element with id "profile" */
+    height: 83vh; /* Sets the height to 83% of the viewport height */
+    margin-bottom: 6rem; /* Adds a bottom margin of 6rem */
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  .about-containers { /* Styles for elements with class "about-containers" */
+    flex-wrap: wrap; /* Allows flex items to wrap onto multiple lines */
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  #contact, /* Styles for the element with id "contact" */
+  #projects { /* Styles for the element with id "projects" */
+    height: fit-content; /* Sets the height to fit the content */
   }
+}
+
+@media screen and (max-width: 1200px) { /* Applies styles when the screen width is 1200px or less */
+  #desktop-nav { /* Styles for the element with id "desktop-nav" */
+    display: none; /* Hides the element */
+  }
+  #hamburger-nav { /* Styles for the element with id "hamburger-nav" */
+    display: flex; /* Displays the element as a flex container */
+  }
+  #experience, /* Styles for the element with id "experience" */
+  .experience-details-container { /* Styles for elements with class "experience-details-container" */
+    margin-top: 2rem; /* Adds a top margin of 2rem */
+  }
+  #profile, /* Styles for the element with id "profile" */
+  .section-container { /* Styles for elements with class "section-container" */
+    display: block; /* Displays the elements as block elements */
+  }
+  .arrow { /* Styles for elements with class "arrow" */
+    display: none; /* Hides the elements */
+  }
+  section, /* Styles for section elements */
+  .section-container { /* Styles for elements with class "section-container" */
+    height: fit-content; /* Sets the height to fit the content */
+  }
+  section { /* Styles for section elements */
+    margin: 0 5%; /* Adds a margin of 0 on top and bottom, and 5% on left and right */
+  }
+  .section__pic-container { /* Styles for elements with class "section__pic-container" */
+    width: 275px; /* Sets the width to 275px */
+    height: 275px; /* Sets the height to 275px */
+    margin: 0 auto 2rem; /* Centers the element horizontally and adds a bottom margin of 2rem */
+  }
+  .about-containers { /* Styles for elements with class "about-containers" */
+    margin-top: 0; /* Removes the top margin */
+  }
+}
+
+@media screen and (max-width: 600px) { /* Applies styles when the screen width is 600px or less */
+  #contact, /* Styles for the element with id "contact" */
+  footer { /* Styles for footer elements */
+    height: 40vh; /* Sets the height to 40% of the viewport height */
+  }
+  #profile { /* Styles for the element with id "profile" */
+    height: 83vh; /* Sets the height to 83% of the viewport height */
+    margin-bottom: 0; /* Removes the bottom margin */
+  }
+  article { /* Styles for article elements */
+    font-size: 1rem; /* Sets the font size to 1rem */
+  }
+  footer nav { /* Styles for nav elements inside footer */
+    height: fit-content; /* Sets the height to fit the content */
+    margin-bottom: 2rem; /* Adds a bottom margin of 2rem */
+  }
+  .about-containers, /* Styles for elements with class "about-containers" */
+  .contact-info-upper-container, /* Styles for elements with class "contact-info-upper-container" */
+  .btn-container { /* Styles for elements with class "btn-container" */
+    flex-wrap: wrap; /* Allows flex items to wrap onto multiple lines */
+  }
+  .contact-info-container { /* Styles for elements with class "contact-info-container" */
+    margin: 0; /* Removes the margin */
+  }
+  .contact-info-container p, /* Styles for p elements inside elements with class "contact-info-container" */
+  .nav-links li a { /* Styles for a elements inside li elements inside elements with class "nav-links" */
+    font-size: 1rem; /* Sets the font size to 1rem */
+  }
+  .experience-sub-title { /* Styles for elements with class "experience-sub-title" */
+    font-size: 1.25rem; /* Sets the font size to 1.25rem */
+  }
+  .logo { /* Styles for elements with class "logo" */
+    font-size: 1.5rem; /* Sets the font size to 1.5rem */
+  }
+  .nav-links { /* Styles for elements with class "nav-links" */
+    flex-direction: column; /* Sets the flex direction to column */
+    gap: 0.5rem; /* Adds a gap of 0.5rem between flex items */
+    text-align: center; /* Centers the text */
+  }
+  .section__pic-container { /* Styles for elements with class "section__pic-container" */
+    width: auto; /* Sets the width to auto */
+    height: 46vw; /* Sets the height to 46% of the viewport width */
+    justify-content: center; /* Centers the content horizontally */
+  }
+  .section__text__p2 { /* Styles for elements with class "section__text__p2" */
+    font-size: 1.25rem; /* Sets the font size to 1.25rem */
+  }
+  .title { /* Styles for elements with class "title" */
+    font-size: 2rem; /* Sets the font size to 2rem */
+  }
+  .text-container { /* Styles for elements with class "text-container" */
+    text-align: justify; /* Justifies the text */
+  }
+}

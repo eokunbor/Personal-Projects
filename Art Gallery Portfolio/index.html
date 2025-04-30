@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
+<head> <!-- Contains metadata and links to external resources -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to make the website responsive -->
+    <title>Art Gallery Portfolio</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Links to the external CSS file -->
+</head>
+<body> <!-- Starts the body section -->
+    <!-- Navigation -->
+    <nav class="navbar"> <!-- Starts the navigation bar -->
+        <ul> <!-- Starts the unordered list -->
+            <li><a href="#floor1">About Me</a></li> <!-- List item with a link to the About Me section -->
+            <li><a href="#floor2">Projects</a></li> <!-- List item with a link to the Projects section -->
+            <li><a href="#floor3">Skills</a></li> <!-- List item with a link to the Skills section -->
+            <li><a href="#floor4">Contact</a></li> <!-- List item with a link to the Contact section -->
+        </ul> <!-- Ends the unordered list -->
+    </nav> <!-- Ends the navigation bar -->
+
+    <!-- Main Gallery Container -->
+    <div class="gallery-container"> <!-- Starts the main gallery container -->
+        <!-- Floor 1: About Me -->
+        <section id="floor1" class="floor"> <!-- Starts the About Me section -->
+            <div class="floor-content"> <!-- Starts the content container for the About Me section -->
+                <h1>About Me</h1> <!-- Heading for the About Me section -->
+                <div class="exhibition-item"> <!-- Starts an exhibition item -->
+                    <h2>Welcome to my Gallery</h2> <!-- Subheading for the exhibition item -->
+                    <p>This is where you can add information about yourself as if it were an art exhibition.</p> <!-- Paragraph for the exhibition item -->
+                </div> <!-- Ends the exhibition item -->
+            </div> <!-- Ends the content container for the About Me section -->
+            <div class="gallery-viewer viewer-1"> <!-- Starts the first gallery viewer -->
+                <!-- Add cartoon viewer image here -->
+            </div> <!-- Ends the first gallery viewer -->
+        </section> <!-- Ends the About Me section -->
+
+ <!-- Floor 2: Projects -->
+ <section id="floor2" class="floor"> <!-- Starts the Projects section -->
+    <div class="floor-content"> <!-- Starts the content container for the Projects section -->
+        <h1>My Projects</h1> <!-- Heading for the Projects section -->
+        <div class="exhibition-item"> <!-- Starts an exhibition item -->
+            <h2>Project 1</h2> <!-- Subheading for the first project -->
+            <p>Description of your first project, displayed as an art piece.</p> <!-- Paragraph for the first project -->
+        </div> <!-- Ends the first exhibition item -->
+        <div class="exhibition-item"> <!-- Starts another exhibition item -->
+            <h2>Project 2</h2> <!-- Subheading for the second project -->
+            <p>Description of your second project, displayed as an art piece.</p> <!-- Paragraph for the second project -->
+        </div> <!-- Ends the second exhibition item -->
+    </div> <!-- Ends the content container for the Projects section -->
+    <div class="gallery-viewer viewer-2"> <!-- Starts the second gallery viewer -->
+        <!-- Add cartoon viewer image here -->
+    </div> <!-- Ends the second gallery viewer -->
+</section> <!-- Ends the Projects section -->
+
+<!-- Floor 3: Skills -->
+<section id="floor3" class="floor"> <!-- Starts the Skills section -->
+    <div class="floor-content"> <!-- Starts the content container for the Skills section -->
+        <h1>My Skills</h1> <!-- Heading for the Skills section -->
+        <div class="exhibition-item"> <!-- Starts an exhibition item -->
+            <h2>Technical Skills</h2> <!-- Subheading for the technical skills -->
+            <p>List of your technical skills presented as artwork.</p> <!-- Paragraph for the technical skills -->
+        </div> <!-- Ends the exhibition item -->
+    </div> <!-- Ends the content container for the Skills section -->
+</section> <!-- Ends the Skills section -->
+
+ <!-- Floor 4: Contact -->
+ <section id="floor4" class="floor"> <!-- Starts the Contact section -->
+    <div class="floor-content"> <!-- Starts the content container for the Contact section -->
+        <h1>Contact Me</h1> <!-- Heading for the Contact section -->
+        <div class="exhibition-item"> <!-- Starts an exhibition item -->
+            <h2>Get In Touch</h2> <!-- Subheading for the contact information -->
+            <p>Your contact information and a form could go here.</p> <!-- Paragraph for the contact information -->
+        </div> <!-- Ends the exhibition item -->
+    </div> <!-- Ends the content container for the Contact section -->
+</section> <!-- Ends the Contact section -->
+</div> <!-- Ends the main gallery container -->
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script> <!-- Ends the JavaScript section -->
+</body> <!-- Ends the body section -->
+</html> <!-- Ends the HTML document -->
