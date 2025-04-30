@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #CBDCDD;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: #BCD2D2;
+}
+
+.nav-item:nth-child(1) {
+    margin-right: 300px;
+}
+
+.nav-item:nth-child(3) {
+    margin-left: 300px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    font-weight: 600;
+    text-align: center;
+    font-size: 85px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.main-content-profile{
+    display: flex;
+}
+
+.rectangle h4{
+    font-weight: 600;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    margin-left: 100px;
+    color: #91b4b5;
+}
+
+.rectangle h6 {
+    font-weight: 400;
+    margin-top: -30px;
+    font-size: 40px;
+    margin-left: 100px;
+    color: #4d4b44;
+}
+
+.curved-rectangle-name, .curved-rectangle-pronouns, .curved-rectangle-major {
+    margin: 20px;
+    width: 800px;
+    height: 150px;
+    margin-left: -50px; 
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.curved-rectangle-uni {
+    width: 800px;
+    height: 210px;
+    margin-left: -50px; 
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.AM-img{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.main-content-profile img {
+    margin-top: 100px;
+    width: auto;
+    max-height: 595px;
+    border-radius: 10%;
+    border: 8px solid #ffffff;
+}
+
+/* Career Goals Section Updated Styling */
+.main-content-goal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    background-color: #CBDCDD;
+    padding: 10px;
+}
+
+.goal-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 15px;
+    width: 50%;
+    
+}
+
+.goal-img-1 {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.goal-img-2 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.goal-img-3 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    
+}
+
+.goal-img img {
+    width: 100%;
+    max-height: 330px;
+    border: 10px solid #ffffff;
+    margin-top: 0;
+    object-fit: cover;
+}
+
+.goal-text {
+    width: 45%;
+    padding: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.goal-text p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Academic and Involvement Section */
+.main-content-aca {
+    margin-top: -20px; /* Reduced gap */
+}
+
+.IV-img {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.main-content-aca img {
+    margin-top: 10px;
+    width: auto;
+    max-height: 690px;
+    border-radius: 10%;
+    border: 8px solid #ffffff;
+}
+
+.img-text h1 {
+    margin-top: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
+}
+
+.curved-rectangle-position {
+    margin: 0 auto;
+    width: 1500px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.curved-rectangle-position h4 {
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    margin-left: 75px;
+    color: #91b4b5;
+}
+
+.curved-rectangle-position h6 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: -30px;
+    font-size: 30px;
+    margin-left: 75px;
+    color: #4d4b44;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.rounded-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #ABB6B5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.rounded-button:hover {
+    background-color: #919999;
+}
