@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Progress Bar - Elizabeth Okunbor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function CircularProgressBar() {
+            const [startValue, setStartValue] = React.useState(0);
+            const endValue = 100;
+            const speed = 50;
+
+            React.useEffect(() => {
+                const progress = setInterval(() => {
+                    setStartValue(prevValue => {
+                        const newValue = prevValue + 1;
+                        const circularProgress = document.querySelector(".circular-progress");
+                        if (circularProgress) {
+                            circularProgress.style.background = `conic-gradient(
+                                #8a2be2 ${newValue * 3.6}deg,
+                                #ededed 0deg
+                            )`;
+                        }
+                        if (newValue === endValue) {
+                            clearInterval(progress);
+                        }
+                        return newValue;
+                    });
+                }, speed);
+
+                return () => clearInterval(progress);
+            }, []);
+
+            return (
+                <div className="container">
+                    <div className="circular-progress">
+                        <span className="progress-value">{startValue}%</span>
+                    </div>
+                    <span className="text">Progress Bar</span>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<CircularProgressBar />);
+    </script>
+</body>
+</html>

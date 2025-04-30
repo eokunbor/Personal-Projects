@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #CBDCDD;
+    overflow-x: hidden;
+    overflow-y: visible;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.main-header {
+    font-weight: 600;
+    text-align: center;
+    font-size: 85px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.475);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: #BCD2D2;
+}
+
+.nav-item:nth-child(1) {
+    margin-right: 300px;
+}
+
+.nav-item:nth-child(3) {
+    margin-left: 300px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Cards styling */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.card img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 8px solid #ffffff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Project title styling like in the image */
+.project-title {
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.project-subtitle {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.description h3 {
+    font-size: 150px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Resume section */
+.resume-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.resume {
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    border: 8px solid #ffffff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rounded-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #ABB6B5;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+    background-color: #919999;
+}
+
+/* Special styling for the first card (SCOPE) to match the reference image */
+.card:first-child {
+    margin-bottom: 40px;
+}
+
+.card:first-child .description h3 {
+    font-size: 150px;
+}
+
+.card:first-child .description p {
+    font-size: 50px;
+}
